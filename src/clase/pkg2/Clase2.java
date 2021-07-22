@@ -60,7 +60,7 @@ public class Clase2 {
     public static String LetrasASCII(String palabra){
         int codificar=0; 
         String resultado = "";
-        int llave = 0;
+        int llave = 9;
         
         for ( int x=0; x<palabra.length(); x++){
             
@@ -83,22 +83,22 @@ public class Clase2 {
         //area();
         //CodigosASCII();
         
-        String res = LetrasASCII("HOLA JESUS");
-        System.out.println("res = " + res);
+        String res = LetrasASCII("?FC8A<JLJ");
+        System.out.println("Palabra a decifrar = " + res);
         
         System.out.println("La palabra a pasar a codigo ASCII es = " + res);
-        byte[] bytes = res.getBytes(StandardCharsets.US_ASCII);
+        byte[] A = res.getBytes(StandardCharsets.US_ASCII);//devuelve la representacion de una matriz
         
-        System.out.println("ASCII :" + bytes[0]);
-        System.out.println("ASCII :" + bytes[1]);
-        System.out.println("ASCII :" + bytes[2]);
-        System.out.println("ASCII :" + bytes[3]);
-        System.out.println("ASCII :" + bytes[4]);
-        System.out.println("ASCII :" + bytes[5]);
-        System.out.println("ASCII :" + bytes[6]);
-        System.out.println("ASCII :" + bytes[7]);
-        System.out.println("ASCII :" + bytes[8]);
-        System.out.println("ASCII :" + bytes[9]);
+        System.out.println("ASCII :" + A[0]);
+        System.out.println("ASCII :" + A[1]);
+        System.out.println("ASCII :" + A[2]);
+        System.out.println("ASCII :" + A[3]);
+        System.out.println("ASCII :" + A[4]);
+        System.out.println("ASCII :" + A[5]);
+        System.out.println("ASCII :" + A[6]);
+        System.out.println("ASCII :" + A[7]);
+        System.out.println("ASCII :" + A[8]);
+        System.out.println("ASCII :" + A[9]);
        
 
     }
